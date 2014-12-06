@@ -1,0 +1,176 @@
+Core Java Definition:
+
+What is jdk ?
+
+Java Development Kit
+
+What jdk contains or composed of and define each components?
+
+JDK contains one (or more) JRE's along with the various development tools like the Java source compilers, bundling and deployment
+tools, debuggers, development libraries, etc. 
+
+JRE (Java Runtime Environment) - Java Runtime Environment contains JVM, class libraries, and other supporting files. 
+It does not contain any development tools such as compiler, debugger  etc.
+
+JVM (Java Virtual Machine)- The Java Virtual Machine provides a platform-independent way of executing code; programmers can concentrate on writing software, without having to be concerned with how or where it will run.
+
+What is IDE?
+A Java IDE (Integrated Development Environment) is a software application which enables users to more easily write and debug
+Java programs.
+
+What are the IDEs available in the market to support java?
+Eclipse IDE, Netbeans IDE, IntelliJ IDE
+
+Explain the entire java life cycle.
+IDE creates a source code which is then complied by the java Complier. 
+It is complied into a .class file which can be loaded by the JVM and run on OS.
+
+what is class?
+A class is a blueprint for any object. A class is where we create out methods and object. 
+
+What is object?
+
+Object is an instantiated instance of the class.
+
+What is the entry point of an application?
+
+An entry point is where control enters a program or piece of code. In many programming languages, the main function is where 
+a program starts its execution.
+
+Why main is static?
+
+JVM can not create any object before program runs. So, to run the program main should be invoked without creating any object.
+ That's why main should be static
+
+What is the difference between an Interface and Abstract class?
+
+Abstract Class and Interface are core part of java programming language, abstract keyword is used to create an abstract class
+ and it can be used with methods also whereas interface keyword is used to create interface and it can’t be used with methods.
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+
+what is Access Specifier?
+ Java Access Specifiers  regulate access to classes, fields and methods in Java.These Specifiers determine whether a field or
+ method in a class, can be used or invoked by another method in another class or sub-class. Access Specifiers can be used to restrict access. Access Specifiers are an integral part of object-oriented programming.
+
+What is OOP ? Define each feature of java OOP.
+oop-object oriented programming. 
+
+Polymorphis- Polymorphism is the ability of an object to take on many forms.
+
+encapsulation- Encapsulation can be described as a protective barrier that prevents the code and data being randomly accessed by
+ other code defined outside the class. Access to the data and code is tightly controlled by an interface.
+
+inheritance - Inheritance is a mechanism wherein a new class is derived from an existing class.
+
+abstraction - Abstraction is the process of abstraction in Java is used to hide certain details and only show the essential
+ features of the object.
+
+What is API?
+Application Programming Interface.
+
+Does java support multiple inheritance?
+no.
+
+What is method overloading and when it happens?
+
+Method overloading deals with the notion of having two or more methods(functions) in the same class with the same name but 
+different arguments. Overloading happens at compile time.
+
+What is method overriding and when it happens?
+ 
+Method overriding means having two methods with the same arguments, but different implementation. One of them would exist in the 
+Parent class (Base Class) while another will be in the derived class(Child Class).Overriding happens at the run time.
+
+Explain exceptions in java and how to handle it.
+An Exception can be anything which interrupts the normal flow of the program. When an exception occurs program processing 
+gets terminated and doesn’t continue further. In such cases we get a system generated error message
+
+What is static keyword in java? How it has been used in variables and methods ?
+
+The static keyword is used in java mainly for memory management. We may apply static keyword with variables, methods, 
+blocks and nested class. The static keyword belongs to the class than instance of the class.
+
+What is final and how it has been used variables and methods?
+
+Finalizing the value of the variable so that no change can be made.
+A final class cannot be subclassed.All methods in a final class are implicity final.
+A final method cannot be overridden or hidden by subclass.
+
+Static Variable - Declaring any variable as static, it is known static variable. The static variable can be used to refer the 
+common property of all objects (that is not unique for each object) e.g. company name of employees,college name of students etc.
+The static variable gets memory only once in class area at the time of class loading. It makes your program memory efficient.
+
+Static Method - A static method belongs to the class rather than object of a class. A static method can be invoked without the
+need for creating an instance of a class.static method can access static data member and can change the value of it.
+
+What is final, finally and finalize?
+
+final:
+	final is a keyword. The variable decleared as final should be
+	initialized only once and cannot be changed. Java classes
+	declared as final cannot be extended. Methods declared as final
+	cannot be overridden.
+	
+finally:
+	finally is a block. The finally block always executes when the
+	try block exits. This ensures that the finally block is executed
+	even if an unexpected exception occurs. But finally is useful for
+	more than just exception handling - it allows the programmer to
+	avoid having cleanup code accidentally bypassed by a return,
+	continue, or break. Putting cleanup code in a finally block is
+	always a good practice, even when no exceptions are anticipated.
+	
+finalize:
+	finalize is a method. Before an object is garbage collected, the
+	runtime system calls its finalize() method. You can write system
+	resources release code in finalize() method before getting garbage
+	collected.
+
+What is a constructor ?
+A constructor is a bit of code that allows you to create objects from a class
+
+What is "this" keyword in java ?
+Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor 
+is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.
+
+What is JVM stand for ? 
+Java virtual machine.
+
+What version of java are you using? Java SE-1.8
+
+What is JAR stand for ?
+JAR stands for "Java ARchive". A JAR file is basically a zip-file which contains a couple of class files and a text file containing some meta information.
+
+JAR files can be used to bundle a Java library containing many classes into a single file (which does not need to be unzipped
+in order to be used by a java programmer) or to bundle a Java application into a so-called executable JAR file (an executable 
+JAR file is just a JAR file whose meta-information contains the information, which class is the main class, i.e. the class
+ whose main method should be run to execute the application).
+ 
+What is compile time and run time?
+
+A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+
+What is heap?
+
+A heap is a specialized tree-based data structure that satisfies the heap property: If A is a parent node of B then the key 
+of node A is ordered with respect to the key of node B with the same ordering applying across the heap.
+
+How java manage it's memory?
+
+The JVM divided the memory into following sections. 
+1. Heap
+2. Stack
+3. Code
+4. Static
+
+This division of memory is required for its effective management.
+
+ The code section contains your bytecode.
+
+ The Stack section of memory contains methods, local variables and reference variables.
+
+ The Heap section contains Objects (may also contain reference variables).
+
+ The Static section contains Static data/methods.
+
+

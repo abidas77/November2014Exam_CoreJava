@@ -1,0 +1,7 @@
+This is a sample text file.It should be readable by using few classes that is available in java api.
+This is core java exam.Every one should do well.
+
+
+
+
+
